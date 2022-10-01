@@ -1,1 +1,3 @@
 # navigation_guidance_vsd
+
+Including documents, models, and scripts related with the papers "Design of heart phantoms for ultrasound imaging of ventricular septal defects (https://doi.org/10.1007/s11548-021-02406-0)" and "Navigation guidance for ventricular septal defect closure in heart phantoms (https://doi.org/10.1007/s11548-022-02711-2)" published in the International Journal of Computer Assisted Radiology and Surgery, 2022. A copy of the last paper is available at https://link.springer.com/epdf/10.1007/s11548-022-02711-2?sharing_token=uGu9_aGfXhub0tBC4_MBQPe4RwlQNchNByi7wbcMAY6adr7Behv6RaOl15uoy5mUpoy2ZDHOW--6lX7iTDqhlxpjvdQ1_leMDlDt97hBh6vPebgAHt4eW1cJmQAVZ_b0PRN0SU3piygEPHi-QcQyO5Jm8TLQMj-eWBTAJvHodcs=). 
