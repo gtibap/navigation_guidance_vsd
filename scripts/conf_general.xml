@@ -1,0 +1,320 @@
+<PlusConfiguration version="2.1" PlusRevision="Plus-2.8.0.a20b5c80 - Win64">
+  <DataCollection StartupDelaySec="1">
+    <DeviceSet Name="Perventricular intervention VSD-closure: general configuration file" Description="Requirements: Pivot and spin calibration in Slicer. Image orientation UN (previous MF--other combinations MN, UF)" />
+    <Device Id="TrackerDevice" Type="AuroraTracker" SerialPort="6" ToolReferenceFrame="Tracker" CheckDSR="true">
+      <DataSources>
+        <DataSource Type="Tool" Id="Reference" PortName="0" BufferSize="150">
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              01000000
+            </NdiIdentity>
+            <PartNumber>
+              610066   T6d0-S00218
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38910800
+            </SerialNumber>
+          </CustomProperties>
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              01000000
+            </NdiIdentity>
+            <PartNumber>
+              610066   T6d0-S00218
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38910800
+            </SerialNumber>
+          </CustomProperties>
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              01000000
+            </NdiIdentity>
+            <PartNumber>
+              610066   T6d0-S00218
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38910800
+            </SerialNumber>
+          </CustomProperties>
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              01000000
+            </NdiIdentity>
+            <PartNumber>
+              610066   T6d0-S00218
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38910800
+            </SerialNumber>
+          </CustomProperties>
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              01000000
+            </NdiIdentity>
+            <PartNumber>
+              610066   T6d0-S00218
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38910800
+            </SerialNumber>
+          </CustomProperties>
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              01000000
+            </NdiIdentity>
+            <PartNumber>
+              610066   T6d0-S00218
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38910800
+            </SerialNumber>
+          </CustomProperties>
+        </DataSource>
+        <DataSource Type="Tool" Id="Stylus" PortName="1" BufferSize="150">
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              02000000
+            </NdiIdentity>
+            <PartNumber>
+              610016 T6a0-L00016
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38997800
+            </SerialNumber>
+          </CustomProperties>
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              02000000
+            </NdiIdentity>
+            <PartNumber>
+              610016 T6a0-L00016
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38997800
+            </SerialNumber>
+          </CustomProperties>
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              02000000
+            </NdiIdentity>
+            <PartNumber>
+              610016 T6a0-L00016
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38997800
+            </SerialNumber>
+          </CustomProperties>
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              02000000
+            </NdiIdentity>
+            <PartNumber>
+              610016 T6a0-L00016
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38997800
+            </SerialNumber>
+          </CustomProperties>
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              02000000
+            </NdiIdentity>
+            <PartNumber>
+              610016 T6a0-L00016
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38997800
+            </SerialNumber>
+          </CustomProperties>
+          <CustomProperties>
+            <Manufacturer>
+              NDI-MF2
+            </Manufacturer>
+            <NdiIdentity>
+              02000000
+            </NdiIdentity>
+            <PartNumber>
+              610016 T6a0-L00016
+            </PartNumber>
+            <Revision>
+              000
+            </Revision>
+            <SerialNumber>
+              38997800
+            </SerialNumber>
+          </CustomProperties>
+        </DataSource>
+      </DataSources>
+      <OutputChannels>
+        <OutputChannel Id="TrackerStream">
+          <DataSource Id="Reference" />
+          <DataSource Id="Stylus" />
+        </OutputChannel>
+      </OutputChannels>
+    </Device>
+    <Device Id="VideoDevice" Type="Epiphan" ClipRectangleOrigin="-1 -1" ClipRectangleSize="-1 -1">
+      <DataSources>
+        <DataSource Type="Video" Id="Video" PortUsImageOrientation="UN" BufferSize="150" />
+      </DataSources>
+      <OutputChannels>
+        <OutputChannel Id="VideoStream" VideoDataSourceId="Video" />
+      </OutputChannels>
+    </Device>
+    <Device Id="TrackedVideoDevice" Type="VirtualMixer" BaseFilename="RecordingTest.igs.mha" EnableCapturing="FALSE">
+      <InputChannels>
+        <InputChannel Id="TrackerStream" />
+        <InputChannel Id="VideoStream" />
+      </InputChannels>
+      <OutputChannels>
+        <OutputChannel Id="TrackedVideoStream" />
+      </OutputChannels>
+    </Device>
+    <Device
+      Id="CaptureDevice"
+      Type="VirtualCapture"
+      BaseFilename="RecordingTest.igs.mha"
+      EnableCapturingOnStart="FALSE"
+      EnableCapturing="FALSE"
+      EnableFileCompression="FALSE"
+      EnableCaptureOnStart="FALSE"
+      RequestedFrameRate="15">
+      <InputChannels>
+        <InputChannel Id="TrackedVideoStream" />
+      </InputChannels>
+    </Device>
+  </DataCollection>
+  <Rendering WorldCoordinateFrame="Reference">
+    <DisplayableObject Type="Model" ObjectCoordinateFrame="StylusTip" Id="StylusModel" File="Stylus_Example.stl" />
+    <DisplayableObject Type="Image" ObjectCoordinateFrame="Image" Id="LiveImage" />
+  </Rendering>
+  <fCal
+    PhantomModelId="PhantomModel"
+    TransducerModelId="ProbeModel"
+    StylusModelId="StylusModel"
+    ImageDisplayableObjectId="LiveImage"
+    NumberOfStylusCalibrationPointsToAcquire="200"
+    ImageCoordinateFrame="Image"
+    ProbeCoordinateFrame="Probe"
+    ReferenceCoordinateFrame="Reference"
+    TransducerOriginCoordinateFrame="TransducerOrigin"
+    TransducerOriginPixelCoordinateFrame="TransducerOriginPixel"
+    FixedChannelId="VideoStream"
+    FixedSourceId="Video"
+    MovingChannelId="TrackerStream"
+    MovingSourceId="StylusToTracker"
+    DefaultSelectedChannelId="TrackedVideoStream" />
+  <vtkPlusPivotCalibrationAlgo ObjectMarkerCoordinateFrame="Stylus" ReferenceCoordinateFrame="Reference" ObjectPivotPointCoordinateFrame="StylusTip" />
+  <PlusOpenIGTLinkServer MaxNumberOfIgtlMessagesToSend="1" MaxTimeSpentWithProcessingMs="50" ListeningPort="18944" SendValidTransformsOnly="true" OutputChannelId="TrackedVideoStream">
+    <DefaultClientInfo>
+      <MessageTypes>
+        <Message Type="TRANSFORM" />
+        <Message Type="IMAGE" />
+      </MessageTypes>
+      <ImageNames>
+        <Image Name="Image" EmbeddedTransformToFrame="Reference" />
+      </ImageNames>
+      <TransformNames>
+        <Transform Name="StylusToReference" />
+      </TransformNames>
+    </DefaultClientInfo>
+  </PlusOpenIGTLinkServer>
+  <Segmentation
+    ApproximateSpacingMmPerPixel="0.078"
+    MorphologicalOpeningCircleRadiusMm="0.27"
+    MorphologicalOpeningBarSizeMm="2"
+    MaxLinePairDistanceErrorPercent="10"
+    AngleToleranceDegrees="10"
+    MaxAngleDifferenceDegrees="10"
+    MinThetaDegrees="-70"
+    MaxThetaDegrees="70"
+    MaxLineShiftMm="10"
+    ThresholdImagePercent="10"
+    CollinearPointsMaxDistanceFromLineMm="0.6"
+    UseOriginalImageIntensityForDotIntensityScore="FALSE"
+    NumberOfMaximumFiducialPointCandidates="20"
+    ClipRectangleOrigin="27 27"
+    ClipRectangleSize="766 562" />
+  <CoordinateDefinitions>
+    <Transform From="Image" To="Reference"
+      Matrix="
+        0.2	0	0	0
+        0	0.2	0	0
+        0	0	0.2	0
+        0	0	0	1"
+       Date="2021.06.28 20:02:10" />
+    <Transform From="StylusTip" To="Stylus"
+      Matrix="
+        0.989735	0	-0.142917	-4.18902
+        -0.049901	0.937063	-0.345577	-10.1292
+        0.133922	0.349161	0.927443	27.1842
+        0	0	0	1"
+       Error="0.245301" Date="080421_132342" />
+  </CoordinateDefinitions>
+</PlusConfiguration>
